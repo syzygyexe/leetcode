@@ -27,7 +27,8 @@ const calculate = (arr) => {
 const calculate = (arr) => {
   return arr.reduce(
     (accumulate, element) =>
-      element > 0 && element % 2 !== 0 ? accumulate + element : accumulate,
+      // We do not need to write (element % 2 !== 0), because if the value is going to be 0, it is going to be false.
+      element > 0 && element % 2 ? accumulate + element : accumulate,
     0
   );
 };
