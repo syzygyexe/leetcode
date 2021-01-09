@@ -12,7 +12,7 @@ const reverse = (x) => {
         x = Math.floor(x / 10);
     }
     
-    if (reverse > (2 ** 31 - 1)) {
+    if (reversed > (2 ** 31 - 1)) {
         return 0;
     }
     
